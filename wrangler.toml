@@ -9,7 +9,3 @@ workers_dev = true
 command = "npm install && npm run build"
 [build.upload]
 format = "service-worker"
-
-[vars]
-FOO = "{{ FOO }}"
-BAR = "{{ BAR }}"
