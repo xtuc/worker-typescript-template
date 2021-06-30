@@ -1,4 +1,4 @@
-name = "worker-typescript-template"
+name = "{{project-name}}"
 type = "javascript"
 zone_id = ""
 account_id = ""
@@ -9,3 +9,7 @@ workers_dev = true
 command = "npm install && npm run build"
 [build.upload]
 format = "service-worker"
+
+[vars]
+FOO = "{{ FOO }}"
+BAR = "{{ BAR }}"
