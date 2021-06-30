@@ -1,5 +1,5 @@
 {
-  "name": "{{ project_name }}",
+  "name": "{{ project-name }}",
   "version": "1.0.0",
   "description": "Cloudflare worker TypeScript template",
   "main": "dist/worker.js",
@@ -9,7 +9,7 @@
     "lint": "eslint --max-warnings=0 src && prettier --check '*.{json,js}' 'src/**/*.{js,ts}' 'test/**/*.{js,ts}'",
     "test": "jest --config jestconfig.json --verbose"
   },
-  "author": "{{ author }}",
+  "author": "{{ authors }}",
   "eslintConfig": {
     "root": true,
     "extends": [
