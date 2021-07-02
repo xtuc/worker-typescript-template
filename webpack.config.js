@@ -10,6 +10,9 @@ module.exports = {
   mode: 'development',
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
+    alias: {
+      internal: path.resolve( __dirname, 'src/internal')
+    }
   },
   module: {
     rules: [
@@ -22,10 +25,5 @@ module.exports = {
         },
       },
     ],
-  },
-  resolve: {
-    alias: {
-      internal: path.resolve(__dirname, 'src/internal/'),
-    },
   },
 }
