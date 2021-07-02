@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "paths": {
+      "internal": ["./src/internal/*"]
+    },
     "outDir": "./dist",
     "module": "commonjs",
     "target": "esnext",
