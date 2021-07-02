@@ -23,4 +23,9 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    alias: {
+      internal: path.resolve(__dirname, 'src/internal/'),
+    },
+  },
 }
