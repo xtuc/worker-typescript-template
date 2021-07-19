@@ -34,7 +34,6 @@
     "typescript": "^4.3.2",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0",
-    "libpcre.js": "^0.4.0",
-    "@cloudflare/edge-side-includes": "^1.0.0"
+    "libpcre.js": "^0.4.0"
   }
 }
