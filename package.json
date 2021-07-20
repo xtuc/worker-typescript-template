@@ -6,14 +6,15 @@
   "scripts": {
     "build": "webpack",
     "format": "prettier --write  '*.{json,js}' 'src/**/*.{js,ts}'",
-    "lint": "prettier --check '*.{json,js}' 'src/**/*.{js,ts}'"
+    "lint": "prettier --check '*.{json,js}' 'src/**/*.{js,ts}'",
+    "test": "tsc --noEmit"
   },
   "author": "{{ authors }}",
   "devDependencies": {
     "@cloudflare/workers-types": "^2.2.2",
     "prettier": "^2.3.0",
     "ts-loader": "^9.2.2",
-    "typescript": "^4.3.2",
+    "typescript": "^4.3.5",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0",
     "libpcre.js": "^0.4.0"
