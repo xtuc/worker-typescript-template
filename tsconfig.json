@@ -20,12 +20,6 @@
       "internal/*": ["src/internal/*"]
     }
   },
-  "include": [
-    "@types",
-    "src"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+  "include": ["@types", "src"],
+  "exclude": ["node_modules", "dist"]
 }

@@ -12,7 +12,7 @@
   "author": "{{ authors }}",
   "devDependencies": {
     "@cloudflare/workers-types": "^2.2.2",
-    "prettier": "^2.3.0",
+    "prettier": "^2.3.2",
     "ts-loader": "^9.2.2",
     "typescript": "^4.3.5",
     "webpack": "^5.38.1",

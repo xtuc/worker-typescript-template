@@ -1,18 +1,18 @@
-const path = require('path')
+const { join } = require('path')
 
 module.exports = {
   entry: './src/index.ts',
   output: {
     filename: 'worker.js',
-    path: path.join(__dirname, 'dist'),
+    path: join(__dirname, 'dist'),
   },
   devtool: 'cheap-module-source-map',
   mode: 'development',
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
     alias: {
-      internal: path.resolve( __dirname, 'src/internal')
-    }
+      internal: join(__dirname, 'src/internal'),
+    },
   },
   module: {
     rules: [
