@@ -2,7 +2,7 @@
   "name": "{{ project-name }}",
   "version": "0.0.0",
   "description": "Cloudflare worker TypeScript template",
-  "main": "dist/worker.js",
+  "main": "build/worker.js",
   "private": true,
   "scripts": {
     "build": "webpack",

@@ -3,8 +3,8 @@ const { join } = require('path')
 module.exports = {
   entry: './src/index.ts',
   output: {
+    path: join(__dirname, 'build'),
     filename: 'worker.js',
-    path: join(__dirname, 'dist'),
   },
   devtool: 'cheap-module-source-map',
   mode: 'development',
