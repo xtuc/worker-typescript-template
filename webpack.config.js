@@ -6,7 +6,7 @@ module.exports = {
     path: join(__dirname, 'build'),
     filename: 'worker.js',
   },
-  devtool: 'cheap-module-source-map',
+  devtool: false,
   mode: 'development',
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
