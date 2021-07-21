@@ -2,5 +2,5 @@ node_modules
 transpiled
 /.idea/
 
-# generated
+# output
 /build

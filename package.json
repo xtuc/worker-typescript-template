@@ -1,11 +1,11 @@
 {
+  "private": true,
   "name": "{{ project-name }}",
   "version": "0.0.0",
   "description": "Cloudflare worker TypeScript template",
-  "main": "build/worker.js",
-  "private": true,
+  "main": "build/index.js",
   "scripts": {
-    "build": "webpack",
+    "build": "rollup -c",
     "format": "prettier --write  '*.{json,js}' 'src/**/*.{js,ts}'",
     "lint": "prettier --check '*.{json,js}' 'src/**/*.{js,ts}'",
     "test": "tsc --noEmit"
@@ -16,10 +16,11 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^2.2.2",
+    "@rollup/plugin-commonjs": "^19.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.2",
     "prettier": "^2.3.2",
-    "ts-loader": "^9.2.2",
+    "rollup-plugin-typescript2": "^0.30.0",
     "typescript": "^4.3.5",
-    "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.0"
+    "rollup": "^2.53.2"
   }
 }
