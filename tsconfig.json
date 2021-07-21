@@ -1,23 +1,24 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
-    "paths": {
-      "internal": ["internal/*"]
-    },
-    "outDir": "./dist",
-    "module": "commonjs",
-    "target": "esnext",
-    "lib": ["esnext", "webworker"],
-    "alwaysStrict": true,
     "strict": true,
-    "preserveConstEnums": true,
+    "target": "es2021",
+    "alwaysStrict": true,
+    "esModuleInterop": false,
     "moduleResolution": "node",
-    "sourceMap": true,
-    "esModuleInterop": true,
-    "types": [
-      "@cloudflare/workers-types"
-    ]
+    "lib": ["es2021", "webworker"],
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": false,
+    "strictFunctionTypes": true,
+    "preserveConstEnums": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "allowJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "internal/*": ["src/internal/*"]
+    }
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist", "test"]
+  "include": ["@types", "src"],
+  "exclude": ["node_modules", "build"]
 }
